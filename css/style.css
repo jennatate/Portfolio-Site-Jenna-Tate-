@@ -113,7 +113,6 @@ a.navLink.isActive{
     font-weight: 600;
     color: #000000 !important;
     text-transform: uppercase;
-    /* Stuff Josh wrote */
     position: relative;
     transition: 150ms transform ease;
 }
@@ -134,4 +133,12 @@ a.navLink.isActive{
 .button:hover {
     text-decoration: none;
     transform: translateY(.125rem) translateX(0.0625rem);
+}
+
+img {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
 }
