@@ -5,6 +5,11 @@ Secondary (Green): #C4D4CB;
 Gradient (Gray): #F4F4F4;
 Footer (Gray): rgba(196, 196, 196, 0.14)
 */
+
+* {
+    box-sizing: border-box;
+  }
+
 body {
     background-color: #ffffff;  
     font-family: 'Montserrat', sans-serif;
@@ -14,13 +19,19 @@ body {
     color: #000000;
 }
 
+footer {
+    background-color: rgba(244, 244, 244, 0.6);
+    padding: 10px 0;
+}
+
 h1, h2, h3 {
     line-height: 1.4;
+    display: inline;
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.375rem;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
@@ -46,20 +57,21 @@ h5 {
     font-size: 1rem;
 }
 
-h5.carouselTitle, h5.caption {
+.carouselTitle, .caption {
     color: #000000;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.75rem;
 }
 
-p.carouselText {
+.carouselText {
     font-size: 0.75rem;
 }
 
 p.intro {
     font-size: 1.25rem;
     line-height: 1.4;
+    margin: 0.5rem 0;
 }
 
 p.intro .introPosition {
@@ -102,9 +114,10 @@ a:active {
 a.navLink {
     font-weight: 600;
     color: #000000;
+    text-transform: uppercase;
 }
 
-a.navLink.isActive{
+a.navLink.isActive {
     color: #8B4B62;
 }
 
@@ -115,6 +128,10 @@ a.navLink.isActive{
     text-transform: uppercase;
     position: relative;
     transition: 150ms transform ease;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    height: 25px;
 }
 
 .button::before {
@@ -130,9 +147,18 @@ a.navLink.isActive{
     z-index: -1;
 }
 
-.button:hover {
+.button:hover, .button:active, .button:focus {
     text-decoration: none;
     transform: translateY(.125rem) translateX(0.0625rem);
+}
+
+.button.footerButton::before {
+    z-index: 0;   
+}
+
+.button.footerButton span {
+    z-index: 1;
+    position: relative;
 }
 
 img {
@@ -141,4 +167,215 @@ img {
 
 iframe {
     width: 100%;
+}
+
+/* Layout Styling */
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0;
+} 
+
+#wordlyProject + #scavengrProject{ 
+    margin-top: 60px;
+}
+
+.logo {
+    max-width: 36px;
+}
+
+header {
+    -webkit-box-shadow: 0px 3px 16px 0px rgba(25, 25, 25, 0.12);
+    -moz-box-shadow:    0px 3px 16px 0px rgba(25, 25, 25, 0.12);
+    box-shadow:         0px 3px 16px 0px rgba(25, 25, 25, 0.12);
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+#navBar {
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 8px;
+}
+
+#heroContainer {
+    max-width: 320px;
+    margin: 15px auto;
+}
+
+#hero h1, .aboutTitle {
+    margin: 0;
+    line-height: 1;
+}
+
+.connectButton, .connectButton:visited {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 45px;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    margin: 0 12px 0 0;
+    border-radius: 50%;
+}
+
+#linkedin {
+    background-color: #007AB9;
+}
+
+#behance {
+    background-color: #053EFF;
+}
+
+#github {
+    background-color: #000;
+    font-size: 1.75rem;
+}
+
+#headshot, #headshot img{
+    width: 60%;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.footerBuiltBy {
+    margin-bottom: 0;
+}
+
+.footerHeader {
+    line-height: auto; 
+    margin: 0 0 20px 0;
+    
+}
+
+.footerSection {
+    margin-bottom: 30px;
+}
+
+.contactBlock {
+    margin-bottom: 40px;
+}
+
+#hero {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.aboutMe {
+    margin-bottom: 60px;
+}
+
+input, textarea {
+    display: block;
+    border-radius: 4px;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    padding: 10px;
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+textarea {
+    -webkit-appearance: textfield;
+}
+
+.projectContent {
+    padding: 0 15px;
+    margin: 20px 0 60px;
+}
+
+.projectIntroImage {
+    margin: 15px 0 50px;
+    text-align: center;
+}
+
+.column {
+    float: left;
+}
+
+.left {
+    width: 30%;
+}
+
+.right {
+    width: 70%;
+}
+
+.projectDetailRow::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.projectDetailRow + .projectDetailRow, .imageRow3up + .imageRow3up {
+    margin-top: 1rem;
+}
+
+.projectDetailHeader, .projectDetailContent {
+    margin: 0;
+}
+
+.projectPageSubtitle {
+    text-transform: uppercase;
+    margin: 2rem 0 0.5rem;
+}
+
+.imageColumn3up {
+    float: left;
+    width: 33.33%;
+    padding: 0.5rem;
+}
+
+.imageColumn2up {
+    float: left;
+    width: 50%;
+    padding: 0.5rem;
+}
+
+.imageRow3up::after, .imageRow2up::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.projectPicture {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+.aboutMeTitle {
+    text-align: center;
+}
+
+.headshotPicture {
+    margin: 0 auto 15px;
+    display: block;
+
+}
+
+.buttonResume {
+    margin-top: 1rem;
+}
+
+#siteFooter {
+    margin-top: 60px;
 }

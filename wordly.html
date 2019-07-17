@@ -19,8 +19,10 @@
 
 <body>
   <header id="navBar">
-    <div>
-      <svg enable-background="new 0 0 360 360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg"><path d="m211.52 16.33c12.98-1.36 26.05-2.81 39.22-4.31 13.14-1.5 25.69-2.81 37.63-3.89 11.92-1.1 22.97-1.93 33.17-2.47 10.17-.54 18.76-.82 25.8-.82 3.84 1.1 5.78 2.73 5.78 4.93 0 2.73-1.93 4.09-5.78 4.09-7.04 0-15.38.28-25.02.82-9.64.56-20.19 1.3-31.58 2.27-11.42.96-23.34 2.13-35.79 3.49-12.48 1.38-25.02 2.87-37.66 4.51-.71 5.76-2.46 14.58-5.27 26.49s-6.12 25.41-9.99 40.47-8.08 30.58-12.64 46.6-8.86 30.88-12.89 44.56c-4.05 13.7-7.64 25.41-10.79 35.11-3.15 9.73-44.31-58.8-41.34-70.03 2.99-11.21 6.33-23 10.01-35.31s7.18-23.94 10.52-34.91c3.34-10.95 6.33-20.59 8.95-28.96 2.65-8.34 4.49-14.02 5.52-17.03-17.19 2.45-31.14 4.51-41.84 6.16s-16.41 2.47-17.1 2.47c-1.75.26-3.25.06-4.49-.62-1.22-.68-1.84-1.7-1.84-3.09-.69-3.01.71-4.77 4.21-5.33.37 0 10.7-1.44 31.07-4.31 20.37-2.86 47.73-6.49 82.14-10.89z" fill="#9c7281"/><path d="m108.04 200.72c3.5-13.4 7.02-26.49 10.52-39.2 3.52-12.73 38 77.34 31.86 95.27s-13.07 34.23-20.78 48.87c-7.73 14.66-16.41 26.63-26.05 35.94-9.67 9.3-20.09 13.82-31.33 13.56-17.91 0-31.95-3.63-42.12-10.89s-14.91-18.01-14.22-32.23c.37-10.69 3.87-21.44 10.54-32.25 6.65-10.81 14.73-21.22 24.21-31.22 9.48-9.99 19.38-19.09 29.74-27.31 10.35-8.21 19.55-15.05 27.63-20.54zm-6.3 18.41c-8.42 6.3-16.94 13.07-25.55 20.33s-16.41 14.92-23.43 23-12.89 16.5-17.63 25.25c-4.74 8.76-7.46 17.81-8.15 27.11 0 5.47.78 10.41 2.37 14.78 1.57 4.39 4.81 8.48 9.74 12.33 5.25 3.01 10.33 2.47 15.26-1.64 4.9-4.11 9.55-10.35 13.95-18.69s8.33-17.87 11.85-28.54c3.5-10.69 6.74-21.1 9.74-31.22 2.97-10.13 5.43-19.09 7.37-26.89 1.92-7.8 3.42-13.07 4.48-15.82z" fill="#8b4b62"/></svg>
+    <div class="container">
+      <a href="/">
+        <svg class="logo" enable-background="new 0 0 360 360" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg"><path d="m211.52 16.33c12.98-1.36 26.05-2.81 39.22-4.31 13.14-1.5 25.69-2.81 37.63-3.89 11.92-1.1 22.97-1.93 33.17-2.47 10.17-.54 18.76-.82 25.8-.82 3.84 1.1 5.78 2.73 5.78 4.93 0 2.73-1.93 4.09-5.78 4.09-7.04 0-15.38.28-25.02.82-9.64.56-20.19 1.3-31.58 2.27-11.42.96-23.34 2.13-35.79 3.49-12.48 1.38-25.02 2.87-37.66 4.51-.71 5.76-2.46 14.58-5.27 26.49s-6.12 25.41-9.99 40.47-8.08 30.58-12.64 46.6-8.86 30.88-12.89 44.56c-4.05 13.7-7.64 25.41-10.79 35.11-3.15 9.73-44.31-58.8-41.34-70.03 2.99-11.21 6.33-23 10.01-35.31s7.18-23.94 10.52-34.91c3.34-10.95 6.33-20.59 8.95-28.96 2.65-8.34 4.49-14.02 5.52-17.03-17.19 2.45-31.14 4.51-41.84 6.16s-16.41 2.47-17.1 2.47c-1.75.26-3.25.06-4.49-.62-1.22-.68-1.84-1.7-1.84-3.09-.69-3.01.71-4.77 4.21-5.33.37 0 10.7-1.44 31.07-4.31 20.37-2.86 47.73-6.49 82.14-10.89z" fill="#9c7281"/><path d="m108.04 200.72c3.5-13.4 7.02-26.49 10.52-39.2 3.52-12.73 38 77.34 31.86 95.27s-13.07 34.23-20.78 48.87c-7.73 14.66-16.41 26.63-26.05 35.94-9.67 9.3-20.09 13.82-31.33 13.56-17.91 0-31.95-3.63-42.12-10.89s-14.91-18.01-14.22-32.23c.37-10.69 3.87-21.44 10.54-32.25 6.65-10.81 14.73-21.22 24.21-31.22 9.48-9.99 19.38-19.09 29.74-27.31 10.35-8.21 19.55-15.05 27.63-20.54zm-6.3 18.41c-8.42 6.3-16.94 13.07-25.55 20.33s-16.41 14.92-23.43 23-12.89 16.5-17.63 25.25c-4.74 8.76-7.46 17.81-8.15 27.11 0 5.47.78 10.41 2.37 14.78 1.57 4.39 4.81 8.48 9.74 12.33 5.25 3.01 10.33 2.47 15.26-1.64 4.9-4.11 9.55-10.35 13.95-18.69s8.33-17.87 11.85-28.54c3.5-10.69 6.74-21.1 9.74-31.22 2.97-10.13 5.43-19.09 7.37-26.89 1.92-7.8 3.42-13.07 4.48-15.82z" fill="#8b4b62"/></svg>
+      </a>
       <nav>
         <ul>
           <li><a class="navLink isActive" href="index.html">Projects</a></li>
@@ -34,85 +36,85 @@
 
   <main>
     <div id="wordlyProject">
-      <div>
+      <div class="projectIntroImage">
         <picture>
-          <source srcset="img/wordly/wordlyheader@1x.jpg" media="(max-width:767px)">
+          <source srcset="img/wordly/wordlyheader@1x.png" media="(max-width:767px)">
           <img src="img/wordly/wordlyheader@2x.png" alt="Wordly Image">
         </picture>
-        <h1>Wordly</h1>
+        <h1 class="projectTitle">Wordly</h1>  
       </div>
 
-      <div>
+      <div class="projectContent"> 
         <h3>Project</h3>
         <p>​Wordly is a mobile app designed to empower people to learn new vocabulary by examining the experience​ ​of​ ​memorizing​ ​and​ ​understanding​ ​new concepts,​ ​techniques,​ ​and​ ​terms​.</p>
         <div>
-         <div>
-            <div><h5>Year</h5></div>
-            <div><p>2018</p></div>
+          <div class="projectDetailRow">
+            <div class="column left"><h5 class="projectDetailHeader">Year</h5></div>
+            <div class="column right"><p class="projectDetailContent">2018</p></div>
           </div>
-          <div>
-            <div><h5>UX Methods</h5></div>
-            <div>Competitive & User Research, User Needs & Persona, User Flows, Wireframing & Prototyping, Usability Testing</div>
+          <div class="projectDetailRow">
+            <div class="column left"><h5 class="projectDetailHeader">UX Methods</h5></div>
+            <div class="column right"><p class="projectDetailContent">Competitive & User Research, User Needs & Persona, User Flows, Wireframing & Prototyping, Usability Testing</p></div>
           </div>
-          <div>  
-            <div><h4>Tools</h4></div>
-            <div><p>Realtime Board, Prott, Lookback, Figma</p></div>
+          <div class="projectDetailRow">
+            <div class="column left"><h5 class="projectDetailHeader">Tools</h5></div>
+            <div class="column right"><p class="projectDetailContent">Realtime Board, Prott, Lookback, Figma</p></div>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="projectContent"> 
         <div>
           <h3>Competitive Analysis</h3>
           <p>​After conducting an in depth analysis of Duolingo, Memrise, Babbel and iLingual I was able to identify some key pros and cons, as well as gaps in the market that Wordly could potentially fill.</p>
         </div>
         <div>
           <div>
-            <div><h5>Pros</h5></div>
+            <div><h5 class="projectPageSubtitle">Pros</h5></div>
             <div><p>Study goals & reminders, caters to different learning methods, offline use</p></div>
           </div>
           <div>
-            <div><h5>Cons</h5></div>
+            <div><h5 class="projectPageSubtitle">Cons</h5></div>
             <div>Lack of onboarding, cannot add own vocabulary words</div>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="projectContent">
         <h3>User Interviews</h3>
         <p>In order to meet users’ needs, it is important to understand how they see products currently available and determine how we can provide them with the features they may be missing.</p>
-        <h5>NEED A WAY TO ASK QUESTIONS</h5>
+        <h5 class="projectPageSubtitle">NEED A WAY TO ASK QUESTIONS</h5>
         <p>Users find learning on apps difficult because they cannot ask why their answer is wrong. There is no way to get clarification.</p>
         <p class="projectQuote">“It’s hard using an app because no one explains the logic behind the answer”</p>
-        <h5>RESCHEDULE INCONVENIENT REMINDERS</h5>
+        <h5 class="projectPageSubtitle">RESCHEDULE INCONVENIENT REMINDERS</h5>
         <p>Users with irregular schedules find it difficult to set a recurring alarm because they never know if they’ll be free at the time or not. They would benefit from a snooze or reset feature.</p>
         <p class="projectQuote">“I ended up ignoring reminders that went off at inconvenient times”</p>
       </div>
 
-      <div>
+      <div class="projectContent">
         <h3>Proto Persona</h3>
-        <div>
+        <div class="projectPicture">
             <picture>
               <source srcset="img/wordly/research/Persona@1x.jpg" media="(max-width:767px)">
               <img src="img/wordly/research/Persona@2x.jpg" alt="Proto Persona Image">
             </picture>
         </div>
-        <h5>Problem</h5>
+        <h5 class="projectPageSubtitle">Problem</h5>
         <p>Maria needs a way to understand when she gets an answer wrong because she feels that explanations prevent her from making the same mistake.</p>
-        <h5>Hypothesis</h5>
+        <h5 class="projectPageSubtitle">Hypothesis</h5>
         <p>We believe that by creating a feature that explains why an answer is incorrect for Maria, we will help increase Maria’s understanding of her new language.</p>
       </div>
 
-      <div>
+      <div class="projectContent"> 
         <h3>User Flows</h3>
-        <div>
-          <div>
+        <div class="imageRow2up">
+          <div class="imageColumn2up projectPicture">
             <picture>
               <source srcset="img/wordly/research/User Flow 1@2x.jpg" media="(max-width:767px)">
               <img src="img/wordly/research/User Flow 1@2x.jpg" alt="User Flow 1">
             </picture>
-            </div>
-          <div>
+          </div>
+          <div class="imageColumn2up">
             <picture>
               <source srcset="img/wordly/research/User Flow 2@2x.jpg" media="(max-width:767px)">
               <img src="img/wordly/research/User Flow 2@2x.jpg" alt="User Flow 2">
@@ -121,11 +123,11 @@
         </div>
       </div>
 
-      <div>
+      <div class="projectContent">
         <h3>Ideation</h3>
         <?xml version="1.0" encoding="utf-8"?>
         <!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg class="projectPicture" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 623.98 235.31" style="enable-background:new 0 0 623.98 235.31;" xml:space="preserve">
         <style type="text/css">
           .st0{fill:#010101;}
@@ -592,63 +594,63 @@
         </svg>
       </div>
     
-      <div>
+      <div class="projectContent"> 
         <h3>Wireframing & Prototyping</h3>
         <div>
-          <div>
-            <div>
+          <div class="imageRow3up projectPicture">
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/welcome/1x/welcome-low@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/welcome/2x/welcome-low@2x.png" alt="Welcome Low Fidelity">
               </picture>
             </div>
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/welcome/1x/welcome-mid@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/welcome/2x/welcome-mid@2x.png" alt="Welcome Mid Fidelity">
               </picture>
             </div> 
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/welcome/1x/welcome-hi@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/welcome/2x/welcome-hi@2x.png" alt="Welcome High Fidelity">
               </picture>
             </div>
           </div>
-          <div>
-            <div>
+          <div class="imageRow3up">
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/my words/2x/mywords-low@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/my words/2x/mywords-low@2x.png" alt="My Words Low Fidelity">
               </picture>
             </div>
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/my words/2x/mywords-mid@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/my words/2x/mywords-mid@2x.png" alt="My Words Mid Fidelity">
               </picture>
             </div> 
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/my words/2x/mywords-hi@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/my words/2x/mywords-hi@2x.png" alt="My Words High Fidelity">
               </picture>
             </div>
           </div>
-          <div>
-            <div>
+          <div class="imageRow3up">
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/expert/1x/expert-low@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/expert/2x/expert-low@2x.png" alt="Expert Low Fidelity">
               </picture>
             </div>
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/expert/1x/expert-mid@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/expert/2x/expert-mid@2x.png" alt="Expert Mid Fidelity">
               </picture>
             </div> 
-            <div>
+            <div class="imageColumn3up">
               <picture>
                 <source srcset="img/wordly/wireframes/expert/1x/expert-hi@1x.png" media="(max-width:767px)">
                 <img src="img/wordly/wireframes/expert/2x/expert-hi@2x.png" alt="Expert High Fidelity">
@@ -656,29 +658,31 @@
             </div>
           </div>
         </div>
-        <a href=https://prottapp.com/p/97c7e9#/s/5bc3b9fd86e465141581ef19>Low-fidelity wireframes and prototyping with Prott</a>
+        <p>Check out the low-fidelity prototype in <a href=https://prottapp.com/p/97c7e9#/s/5bc3b9fd86e465141581ef19 target="_blank">Prott</a></p>
       </div>
       
     </div>
   </main>
 
-  <footer>
-    <div>
-      <div>
-        <h4>Get in Touch</h4>
+  <footer id="siteFooter">
+    <div class="container">
+      <div class="footerSection">
+        <h4 class="footerHeader">Get in Touch</h4>
         <p>If you think we’d make a great team, I can’t wait to hear from you!</p>
-        <a href="mailto:hello@jennatate.com" class="button">Send Me an Email <i class="fas fa-angle-right fa-sm"></i></a>
+        <a href="mailto:hello@jennatate.com" class="button footerButton"><span>Send Me an Email <i class="fas fa-angle-right fa-sm"></i></span></a>
       </div>
-      <div>
-        <h4>Connect</h4>
-        <a href="#"><?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="67px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="67px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:#007AB9;"/></svg></a>
-        <a href="#"><?xml version="1.0" ?><svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="black" stroke="none" stroke-width="1"><g id="behance"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#000000"/><path d="M35.423091,19.8620192 L35.423091,22.1697115 L44.6538602,22.1697115 L44.6538602,19.8620192 L35.423091,19.8620192 Z M12.1153846,18.6608699 L22.7675034,18.7788462 C22.7675034,18.7788462 28.6170466,18.4703274 29.4233025,23.1146711 C30.2295586,27.7590147 26.4808824,28.8562946 26.4808824,28.8562946 C26.4808824,28.8562946 31.1104642,29.9078218 30.4658208,35.3325942 C29.8211774,40.7573666 23.4993619,40.8133524 23.4993619,40.8133524 L12.1153846,40.8133519 L12.1153846,18.6608699 Z M16.9615525,27.4774461 L21.3695837,27.5049514 C21.6516893,27.5049514 22.3933893,27.4803467 23.0034696,27.336314 C23.2646051,27.2746631 23.7728004,27.0992632 24.1236635,26.782913 C24.2693523,26.6515549 24.5377436,26.2814743 24.6926203,25.8428777 C24.8431477,25.4165979 24.8822726,24.9224763 24.8822726,24.7329064 C24.8822726,24.3858127 24.8190558,24.0645214 24.6926204,23.7690227 C24.5661849,23.4735241 24.3765346,23.2178981 24.1236637,23.0021372 C23.8707928,22.7863762 23.5492118,22.6175224 23.1589111,22.4955706 C22.7686104,22.3736187 22.3041046,22.3126437 21.7653796,22.3126437 L16.9615525,22.2851384 L16.9615525,27.4774461 Z M16.9615525,36.7931713 L21.7775823,36.8235718 C22.085799,36.8235718 22.8961493,36.7963772 23.5626975,36.6371843 C23.8480031,36.5690442 24.403236,36.3751824 24.7865743,36.0255343 C24.9457478,35.88035 25.2389808,35.4713161 25.4081926,34.9865544 C25.5726525,34.5154061 25.6153987,33.9692752 25.6153987,33.7597518 C25.6153987,33.3761244 25.5463307,33.0210151 25.4081927,32.6944134 C25.2700546,32.3678116 25.0628506,32.0852794 24.7865745,31.8468083 C24.5102984,31.6083372 24.1589525,31.4217105 23.7325263,31.2869225 C23.3061002,31.1521344 22.7986006,31.0847414 22.2100123,31.0847414 L16.9615525,31.054341 L16.9615525,36.7931713 Z M36.4409618,33.8425717 C36.4478888,33.9715799 36.4409618,37.1532913 39.0477765,37.8840146 C42.0741904,38.7323569 43.4230089,36.2185003 43.5277016,35.92719 L47.4917991,35.92719 C47.3892504,36.404656 45.7778324,42.9046671 37.0105169,40.7862084 C31.6287911,39.4858138 31.9055364,33.1135742 31.9055364,32.5678709 C31.9055364,32.0652391 31.9271709,29.3919629 34.0958158,26.9267578 C36.2644605,24.4615525 39.3520177,24.4615524 39.9772696,24.4615525 C40.6025216,24.4615527 43.818071,24.4615525 45.7778318,26.6370568 C48.3134961,29.4518638 47.8105721,33.9621338 47.8105721,33.9621338 L36.4409618,33.8425717 Z M43.3846295,31.054341 C43.3538948,30.5556423 43.2540087,30.0960641 43.0849681,29.6755926 C42.9159275,29.2551212 42.6828598,28.890881 42.3857581,28.5828612 C42.0886565,28.2748414 41.732652,28.0328295 41.3177342,27.8568182 C40.9028163,27.6808069 40.4392422,27.5928025 39.9269979,27.5928025 C39.4659781,27.5928025 39.0382605,27.685696 38.6438325,27.8714857 C38.2494044,28.0572754 37.9036447,28.3090656 37.606543,28.6268638 C37.3094413,28.944662 37.0712513,29.3113468 36.8919658,29.726929 C36.7126803,30.1425113 36.6076718,30.5849775 36.5769372,31.054341 L43.3846295,31.054341 Z" fill="#FFFFFF"/></g></g></svg></a>
-        <a href="#"><?xml version="1.0" ?><svg height="1024" width="1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 0C229.25 0 0 229.25 0 512c0 226.25 146.688 418.125 350.156 485.812 25.594 4.688 34.938-11.125 34.938-24.625 0-12.188-0.469-52.562-0.719-95.312C242 908.812 211.906 817.5 211.906 817.5c-23.312-59.125-56.844-74.875-56.844-74.875-46.531-31.75 3.53-31.125 3.53-31.125 51.406 3.562 78.47 52.75 78.47 52.75 45.688 78.25 119.875 55.625 149 42.5 4.654-33 17.904-55.625 32.5-68.375C304.906 725.438 185.344 681.5 185.344 485.312c0-55.938 19.969-101.562 52.656-137.406-5.219-13-22.844-65.094 5.062-135.562 0 0 42.938-13.75 140.812 52.5 40.812-11.406 84.594-17.031 128.125-17.219 43.5 0.188 87.312 5.875 128.188 17.281 97.688-66.312 140.688-52.5 140.688-52.5 28 70.531 10.375 122.562 5.125 135.5 32.812 35.844 52.625 81.469 52.625 137.406 0 196.688-119.75 240-233.812 252.688 18.438 15.875 34.75 47 34.75 94.75 0 68.438-0.688 123.625-0.688 140.5 0 13.625 9.312 29.562 35.25 24.562C877.438 930 1024 738.125 1024 512 1024 229.25 794.75 0 512 0z"/></svg></a>
-        <p>This website is designed and coded by Jenna Tate</p>
+      <div class="footerSection"> 
+        <h4 class="footerHeader">Connect</h4>
+        <div class="contactBlock">
+          <a class="connectButton" id="linkedin" href="https://www.linkedin.com/in/jennatate/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a class="connectButton" id="behance" href="https://www.behance.net/jennatate" target="_blank"><i class="fab fa-behance"></i></a>
+          <a class="connectButton" id="github" href="#"><i class="fab fa-github-alt" target="_blank"></i></a>
+        </div>
+        <p class="footerBuiltBy">This website is designed and coded by Jenna Tate</p>
       </div>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/24ff446922.js"></script>
-</body>
+  </body>
 
 </html>
