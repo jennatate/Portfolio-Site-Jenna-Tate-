@@ -650,26 +650,9 @@ Large devices (1024px or larger)
         max-width: 690px;
     }
 
-    .sheenBox {
-        display: inline-block;
-        overflow: hidden;
-        content: '';
-        position: absolute;
-        top: -135px;
-        left: 200px;
-        width: 150px;
-        height: 150px;
-        z-index: 0;
-        transform: skewX(45deg);
-        border-bottom-left-radius: 150px;
-        border-top-left-radius: 40px;
-        border-left: 40px solid rgba(255,255,255,0.3);
-    }
-
-
     @keyframes logo-sheen {
         from {transform: translate(0, 0) skewX(45deg);}
-        to {transform: translate(-300px, 110px) skewX(45deg);}
+        to {transform: translate(-580px, 110px) skewX(45deg);}
     }
 
     .sheenBox {
