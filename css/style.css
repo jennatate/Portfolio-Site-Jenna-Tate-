@@ -409,6 +409,47 @@ textarea {
     padding-left: 15px;
 }
 
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    from {fill: #edc655;}
+    to {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px, 48px);}
+    to {transform: translate(100px, 48px);}
+}
+
+.sun {
+    animation-name: color-change;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -498,6 +539,13 @@ Medium devices (640px and larger)
     .getInTouch {
         display: block;
         margin-bottom: inherit;
+    }
+
+    .heroBgImgContainer {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: -1;
     }
 
     .heroBgImg {
@@ -600,6 +648,37 @@ Large devices (1024px or larger)
     .projectContent {
         padding: 0;
         max-width: 690px;
+    }
+
+    .sheenBox {
+        display: inline-block;
+        overflow: hidden;
+        content: '';
+        position: absolute;
+        top: -135px;
+        left: 200px;
+        width: 150px;
+        height: 150px;
+        z-index: 0;
+        transform: skewX(45deg);
+        border-bottom-left-radius: 150px;
+        border-top-left-radius: 40px;
+        border-left: 40px solid rgba(255,255,255,0.3);
+    }
+
+
+    @keyframes logo-sheen {
+        from {transform: translate(0, 0) skewX(45deg);}
+        to {transform: translate(-300px, 110px) skewX(45deg);}
+    }
+
+    .sheenBox {
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-name: logo-sheen;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-timing-function: ease;
     }
 
 }
