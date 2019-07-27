@@ -19,19 +19,22 @@
 
 <body>
   <header id="navBar">
-    <div class="container">
-      <a href="/">
-        <img class="logo" src="img/logo.svg" />
-      </a>
-      <nav>
-        <ul>
-          <li><a class="navLink" href="index.html">Projects</a></li>
-          <li><a class="navLink" href="about.html">About</a></li>
-          <li><a class="navLink isActive" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <div class="container">
+        <div class="navToggle" id="myNavToggle">
+          <a href="/">
+            <img class="logo" src="img/logo.svg" />
+          </a>
+          <nav>
+            <ul>
+              <li><a class="navLink" href="index.html">Projects</a></li>
+              <li><a class="navLink" href="about.html">About</a></li>
+              <li><a class="navLink isActive" href="contact.html">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
   <main>
     <div id="contactMe">
@@ -87,6 +90,10 @@
      </div>
   </footer>
   <script src="https://kit.fontawesome.com/24ff446922.js"></script>
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   </body>
 

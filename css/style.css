@@ -68,10 +68,20 @@ h5 {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.75rem;
+    text-align: center;
 }
 
 .carouselText {
     font-size: 0.75rem;
+    text-align: center;
+}
+
+.carousel-item {
+    margin-top: 30px;
+}
+
+.carousel-item + .carousel-item {
+    margin-top: 60px;
 }
 
 p.intro {
@@ -192,34 +202,55 @@ iframe {
     max-width: 36px;
 }
 
-nav {
-    display: inline-block;
-    width: 100%;
-    
-}
-
 #navBar {
-    padding: 10px 0 0 0;
-    text-align: center;
+    padding: 10px 0 4px 0;
     width: 100%;
 }
 
 nav > ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
-nav > ul > li {
-    display: inline-block;
+.navToggle li:not(:last-child) {
+    display: none;
+  }
+
+.navToggle, .navToggle.responsive {
+    position: relative;
 }
 
-nav > ul > li > a {
-    padding: 0 8px;
+.navToggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0;
+}
+
+.navToggle.responsive li  {
+    display: block;
+  }
+
+.navToggle.responsive nav {
+    padding: 0;
+    margin: 0;
+}
+.navToggle.responsive li  {
+    display: block;
+    text-align: right;
+    padding: 3px 0;
+}
+
+.navToggle.responsive li:last-child  {
+    padding: 0 0 10px;
 }
 
 #heroContainer {
     max-width: 320px;
     margin: 15px auto;
+    text-align: left;
 }
 
 #hero h1, .aboutTitle {
@@ -259,6 +290,7 @@ nav > ul > li > a {
     width: 60%;
     padding: 0;
     border-radius: 50%;
+    margin-bottom: 30px;
 }
 
 .footerBuiltBy {
@@ -281,7 +313,7 @@ nav > ul > li > a {
 }
 
 #hero {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
 }
@@ -290,10 +322,6 @@ nav > ul > li > a {
     display: inline-block;
     text-align: left;
     max-width: 430px;
-}
-
-.aboutMe {
-    margin-bottom: 60px;
 }
 
 .aboutMeRow {
@@ -471,13 +499,33 @@ Medium devices (640px and larger)
     }
 
     #navBar {
-        text-align: unset;
+        text-align: inherit;
     }
 
     nav {
         width: auto;
         float: right;
         margin-top: 5px;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    nav > ul {
+        margin: 1em, 0;
+    }
+
+    nav > ul > li > a {
+        padding: 0 8px;
+    }
+
+    .navToggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navToggle li:last-child {
+        display: none;
     }
 
     .footerColumn {
@@ -494,10 +542,6 @@ Medium devices (640px and larger)
 
     .footerColumn.connect {
         text-align: right;
-    }
-
-    nav > ul {
-        margin: auto;
     }
 
     .container {
@@ -522,6 +566,7 @@ Medium devices (640px and larger)
 
     #headshot img {
         width: 165px;
+        border-radius: 50%;
     }
 
     .aboutMeRow {
@@ -564,9 +609,15 @@ Medium devices (640px and larger)
         position: relative;
     }
 
+    #allProjects {
+        width: 100vw;
+        max-width: 100%;
+    }
+
     .projectRow {
         position: relative;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 51px;
         max-width: 800px;
         margin-right: auto;
         margin-left: auto;
@@ -577,7 +628,7 @@ Medium devices (640px and larger)
         z-index: -1;
         width: 430px;
         max-width: calc(100% - 265px);
-        right: 30px;
+        right: 51px;
         bottom: -7.5px;
     }
 
@@ -595,7 +646,7 @@ Large devices (1024px or larger)
         width: 100%;
         max-width: 920px;
     }
-    
+
     #hero {
         margin-bottom: 80px;
     }
