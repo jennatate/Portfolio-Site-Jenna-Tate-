@@ -1,0 +1,24 @@
+{
+  "name": "jenna-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennatate/Portfolio-Site-Jenna-Tate-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennatate/Portfolio-Site-Jenna-Tate-/issues"
+  },
+  "homepage": "https://github.com/jennatate/Portfolio-Site-Jenna-Tate-#readme",
+  "devDependencies": {
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
